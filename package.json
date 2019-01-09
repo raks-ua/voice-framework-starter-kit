@@ -29,5 +29,8 @@
   },
   "scripts": {
     "unit": "jasmine-node tests/unit/specs/"
+  },
+  "engines": {
+    "node": ">=6.10"
   }
 }
