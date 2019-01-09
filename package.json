@@ -1,0 +1,33 @@
+{
+  "name": "voice-framework-starter-kit",
+  "description": "Voice Framework Starter KIT",
+  "author": {
+    "name": "Vitaliy Grinchishin"
+  },
+  "homepage": "https://github.com/raks-ua/voice-framework-starter-kit",
+  "keywords": [
+    "alexa",
+    "google actions",
+    "dialogflow",
+    "clova"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "colors": "^1.1.2",
+    "config": "^1.25.1",
+    "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "gulp-aws-lambda": "^1.0.11",
+    "gulp-copy": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-zip": "^3.2.0",
+    "htmlparser2": "^3.9.2",
+    "jasmine-node": "^1.14.5",
+    "request": "^2.81.0",
+    "socket.io": "^2.1.1",
+    "voice-framework": "git+https://github.com/raks-ua/voice-framework.git#v1.0.1"
+  },
+  "scripts": {
+    "unit": "jasmine-node tests/unit/specs/"
+  }
+}
