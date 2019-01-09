@@ -16,6 +16,8 @@
     "colors": "^1.1.2",
     "config": "^1.25.1",
     "express": "^4.16.2",
+    "graceful-fs": "^4.1.15",
+    "growl": ">=1.10.0",
     "gulp": "^3.9.1",
     "gulp-aws-lambda": "^1.0.11",
     "gulp-copy": "^1.0.0",
@@ -23,6 +25,8 @@
     "gulp-zip": "^3.2.0",
     "htmlparser2": "^3.9.2",
     "jasmine-node": "^1.14.5",
+    "lodash": ">=4.17.5",
+    "minimatch": ">=3.0.2",
     "request": "^2.81.0",
     "socket.io": "^2.1.1",
     "voice-framework": "git+https://github.com/raks-ua/voice-framework.git#v1.0.2"
