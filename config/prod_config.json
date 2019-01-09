@@ -13,6 +13,13 @@
         "APP_ID": "",
         "DASHBOT": ""
     },
+    "CLOVA": {
+        "APP_ID": "",
+	"CHECK_SIGNATURE": true,
+	"COUNTRY": "",
+	"LANG": ""
+    },
+
     "SERVER": {
         "PORT": 3000
     }
