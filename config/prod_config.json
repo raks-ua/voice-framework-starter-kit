@@ -1,0 +1,19 @@
+{
+    "DB": {
+        "HOST": "",
+        "NAME": "",
+        "USER": "",
+        "PASSWORD": ""
+    },
+    "GOOGLE": {
+        "APP_ID": "google",
+        "DASHBOT": ""
+    },
+    "ALEXA": {
+        "APP_ID": "",
+        "DASHBOT": ""
+    },
+    "SERVER": {
+        "PORT": 3000
+    }
+}
