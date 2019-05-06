@@ -1,9 +1,9 @@
 {
     "DB": {
-        "HOST": "",
-        "NAME": "",
-        "USER": "",
-        "PASSWORD": ""
+        "HOST": "localhost",
+        "NAME": "app_stats_nvvetal",
+        "USER": "nvvetal",
+        "PASSWORD": "vetaljr"
     },
     "GOOGLE": {
         "APP_ID": "google",
@@ -21,6 +21,6 @@
     },
 
     "SERVER": {
-        "PORT": 3000
+        "PORT": 6112
     }
 }

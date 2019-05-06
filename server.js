@@ -9,6 +9,7 @@ let io = require('socket.io')(http);
 
 let appServerGoogle = require('./app-server-google');
 let appServerClova = require('./app-server-clova');
+let appServerRPC = require('./app-server-rpc');
 let express = Express();
 
 
@@ -169,6 +170,24 @@ express.post('/api/clova', jsonParser, function (req, res, next) {
     }
     clovaProcess();
 });
+
+app.post('/api/rpc', jsonParser, function (req, res, next) {
+    //console.log(req);
+    if (!req.body) return res.sendStatus(400);
+    console.log('API RPC POST request');
+    console.log(JSON.stringify(req.body));
+    appServerRPC.run(req.body, (err, request) => {
+        console.log('[RESULT]', err, request);
+        res.contentType('application/json');
+        let d = request.getResponse().getResponse();
+        console.log('[RESPONSE]', JSON.stringify(d));
+        console.log('[RESPONSE TIME]', request.getResponseTime());
+        res.send(JSON.stringify(d) + "\n");
+    });
+
+});
+
+
 
 app.use(function (req, res, next) {
     console.log('Not found');
